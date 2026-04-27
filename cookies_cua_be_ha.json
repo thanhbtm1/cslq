@@ -1,0 +1,122 @@
+[
+    {
+        "name": "datadome",
+        "value": "iB9J1aYsQ3YhuGE5ATfJX7h7w~oVCTsUKs_O8DcMy7yf3EfK1V5UfXtaBM0eIx~7rfyDDcsQv_zKauE8KwIFGGAVFHE3E8INO5nN2bkg2KT5jEOfLonLQCICfgU5owIZ",
+        "domain": ".garena.com",
+        "path": "/",
+        "expires": 1808728173.366972,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Lax"
+    },
+    {
+        "name": "apple_state_key",
+        "value": "0d74aed8414a11f18a0922ec07fe7d17",
+        "domain": ".garena.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None"
+    },
+    {
+        "name": "fb_state",
+        "value": "2f5f15a7cb05490d8bcfb91507c83621",
+        "domain": "auth.garena.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None"
+    },
+    {
+        "name": "google_state",
+        "value": "83f3473b3eff4265ac606a4292bff99d",
+        "domain": "auth.garena.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None"
+    },
+    {
+        "name": "huawei_state",
+        "value": "75ec86bd719c41b2826dc07b957281c5",
+        "domain": "auth.garena.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None"
+    },
+    {
+        "name": "line_state",
+        "value": "b44d156b7b03408a867db57bfe4a625b",
+        "domain": "auth.garena.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None"
+    },
+    {
+        "name": "twitter_state",
+        "value": "240909b322ff4c2f8e3a78c6bd162b44",
+        "domain": "auth.garena.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None"
+    },
+    {
+        "name": "vk_state",
+        "value": "6452f4afb4a749859363eb42b85c29f3",
+        "domain": "auth.garena.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None"
+    },
+    {
+        "name": "tiktok_state",
+        "value": "6a66b86fadf7421f9824e4569195c7c5",
+        "domain": "auth.garena.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None"
+    },
+    {
+        "name": "youtube_state",
+        "value": "cec90ee89cb44c2db80686fdf0669fc5",
+        "domain": "auth.garena.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None"
+    },
+    {
+        "name": "_ga",
+        "value": "GA1.1.725224638.1777192174",
+        "domain": ".garena.com",
+        "path": "/",
+        "expires": 1811752173.613722,
+        "httpOnly": false,
+        "secure": false,
+        "sameSite": "Lax"
+    },
+    {
+        "name": "_ga_G8QGMJPWWV",
+        "value": "GS2.1.s1777192173$o1$g0$t1777192173$j60$l0$h0",
+        "domain": ".garena.com",
+        "path": "/",
+        "expires": 1811752173.6276,
+        "httpOnly": false,
+        "secure": false,
+        "sameSite": "Lax"
+    }
+]
