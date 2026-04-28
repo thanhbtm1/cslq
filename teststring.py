@@ -7,16 +7,24 @@ def thoigian(tg):
     #     time.sleep(1)
     #     print("                                                       ",end = "\r")
     time.sleep(tg)
-
+ma = "Chia sẻ mã mời --kpX83bWR69--, [[ll2Buwk1IOGLLHIJ5feC7aFvtBVEDPP ]]"
+# Chia sẻ mã mời --kpX83bWR69--, [[ll2Buwk1IOGLLHIJ5feC7aFvtBVEDPP ]]
+# Chia sẻ mã mời --HR29VE9aBQ--, [[lllD61TyHN5cwG2SNpk3VxDZADOGcPP ]] Thanh
 devices = [
-
+    "127.0.0.1:5585"  ,
+    "127.0.0.1:5635"  ,
+    "127.0.0.1:5655"  ,
+    "127.0.0.1:5665"  ,
+    #"127.0.0.1:5675"
+    
 ]
 with open("data.txt", 'r', encoding='utf-8') as f:
     lines = f.readlines()
 n = len(lines) // len(devices)
+print(f"mỗi máy xử lí {n} acc")
 def task(number,sl,serial):
     d = u2.connect(serial=serial)
-    for i in range(number*sl,min(sl + number * sl,len(lines)),1):        
+    for i in range(number*sl + 505,min(sl + number * sl,len(lines)),1):        
         item = lines[i].strip()
         tk = item.split('|')[0]
         mk = item.split('|')[1]
@@ -29,6 +37,7 @@ def task(number,sl,serial):
         d.click(714,244)
         thoigian(35) # doi 35s
         d.click(757,723)
+        print("click nut dang nhap")
         thoigian(4) # doi 10s
         # dang nhap
         d.click(522,316) # o nhap tai khoan
@@ -40,18 +49,18 @@ def task(number,sl,serial):
         d.send_keys(mk) # nhap mat khau
         thoigian(1)
         d.click(537,607) # nut dang nhap
-        thoigian(10)
+        thoigian(15)
         if d(textContains="trang web").exists:
             d.click(562,703)
             continue
-        thoigian(20)
+        thoigian(25)
         d.click(823,467) # banner sk
         thoigian(3)
         d.click(1177,788) # nhap ma
         thoigian(3)
         d.click(811,415)
         thoigian(2)
-        d.send_keys("Chia sẻ mã mời --HR29VE9aBQ--, [[lllD61TyHN5cwG2SNpk3VxDZADOGcPP ]]")
+        d.send_keys(ma)
         thoigian(2)
         d.click(807,617) #xac nhan
         print(f"\033[32m[SUCCESS] Xong acc thu {i + 1}\033[0m")
@@ -65,6 +74,7 @@ threads = []
 for i in range(len(devices)):
     t = threading.Thread(target=task, args=(i,n,devices[i]))
     threads.append(t);
+    time.sleep(1);
     t.start()
 for t in threads:
     t.join()
