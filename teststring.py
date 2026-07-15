@@ -7,15 +7,10 @@ def thoigian(tg):
     #     time.sleep(1)
     #     print("                                                       ",end = "\r")
     time.sleep(tg)
-ma = "Chia sẻ mã mời --kpX83bWR69--, [[ll2Buwk1IOGLLHIJ5feC7aFvtBVEDPP ]]"
-# Chia sẻ mã mời --kpX83bWR69--, [[ll2Buwk1IOGLLHIJ5feC7aFvtBVEDPP ]]
-# Chia sẻ mã mời --HR29VE9aBQ--, [[lllD61TyHN5cwG2SNpk3VxDZADOGcPP ]] Thanh
+ma = "Mã mời của tôi là --tW7v9m4X6J--, [[lllD61TyHN5cwG2SNp4QB2XD1SaEyPP ]]"
+
 devices = [
-    "127.0.0.1:5585"  ,
-    "127.0.0.1:5635"  ,
-    "127.0.0.1:5655"  ,
-    "127.0.0.1:5665"  ,
-    #"127.0.0.1:5675"
+    "emulator-5554"
     
 ]
 with open("data.txt", 'r', encoding='utf-8') as f:
@@ -24,7 +19,7 @@ n = len(lines) // len(devices)
 print(f"mỗi máy xử lí {n} acc")
 def task(number,sl,serial):
     d = u2.connect(serial=serial)
-    for i in range(number*sl + 505,min(sl + number * sl,len(lines)),1):        
+    for i in range(number*sl + 510,min(sl + number * sl,len(lines)),1):        
         item = lines[i].strip()
         tk = item.split('|')[0]
         mk = item.split('|')[1]
@@ -32,33 +27,36 @@ def task(number,sl,serial):
         # xoa du lieu lien quan 
         d.app_clear("com.garena.game.kgvn")
         print(f"\033[32m[SUCCESS] xoa du lieu acc thu {i} thanh cong\033[0m")
-        thoigian(3)
-        # mo lien quan
+        thoigian(5)
+        # mo lien   quan
         d.click(714,244)
         thoigian(35) # doi 35s
         d.click(757,723)
         print("click nut dang nhap")
         thoigian(4) # doi 10s
         # dang nhap
-        d.click(522,316) # o nhap tai khoan
+        d.click(303,235) # o nhap tai khoan
         thoigian(1)
         d.send_keys(tk) # nhap tai khoan
         thoigian(1)
-        d.click(344,420) # o nhap mat khau
+        d.click(344,334) # o nhap mat khau
         thoigian(1)
         d.send_keys(mk) # nhap mat khau
         thoigian(1)
-        d.click(537,607) # nut dang nhap
+        d.click(537,482) # nut dang nhap
         thoigian(15)
         if d(textContains="trang web").exists:
             d.click(562,703)
             continue
         thoigian(25)
+        d.send_keys(ma)
         d.click(823,467) # banner sk
         thoigian(3)
-        d.click(1177,788) # nhap ma
+        d.click(1010,782)#choi ngay
         thoigian(3)
-        d.click(811,415)
+        d.click(1447,827) # nut nhap ma 
+        thoigian(3)
+        d.click(782,437)
         thoigian(2)
         d.send_keys(ma)
         thoigian(2)
